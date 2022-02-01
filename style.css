@@ -1,0 +1,33 @@
+h1 {
+    font-size: 56px;
+    font-family: 'Roboto';
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 117px;
+    height: 146px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.img__card {
+    width: 100px;
+    height: 100px;
+    margin: 20px 20px 10px 10px;
+}
+
+.all__cards {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    margin-bottom: 34px;
+}
+
+body {
+    background-color: #F23F42;
+}
