@@ -47,6 +47,12 @@ header {
     margin: 20px 20px 10px 10px;
 }
 
+.img__face {
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+
 .all__cards {
     display: flex;
     justify-content: center;
