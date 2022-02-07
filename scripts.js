@@ -34,13 +34,23 @@ function gameStart() {
     for (let x = 0; x < cardsInGame.length; x++) {
       include.innerHTML =
         include.innerHTML +
-        ` <article class="card" onclick="function clickCard()" data-identifier="card">
-          <img src="./images/plogo.png" class="img-card front-face face" data-identifier="front-face" />
-         <img src="${cardsInGame[x]}" class="img-card back-face" data-identifier="back-face"/ >
+        ` <article class="card front-face" onclick="cardClicked()" data-identifier="card">
+          <img src="./images/plogo.png" class="img-card face front-face" data-identifier="front-face" />
+         <img src="${cardsInGame[x]}" class="img-card back-face face" data-identifier="back-face"/ >
      </article>`;
     }
   }
   gameStart();
 
+  function cardClicked(){
+    const cardClick = document.querySelector(".card");
+    if (cardClick.classList.contains("front-face")) {
+    }}
+
+    
+  
+
+ 
+  
 
   

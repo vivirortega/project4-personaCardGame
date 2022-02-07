@@ -13,14 +13,7 @@ header {
     height: 146px;
     background-color: white;
     border-radius: 5px;
-}
-
-.card:hover .back-face {
-    transform: rotateY(0deg);
-}
-
-.card:hover .front-face {
-    transform: rotateY(-180deg);
+    backface-visibility: hidden;
 }
 
 .face {
