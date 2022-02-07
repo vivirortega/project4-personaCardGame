@@ -1,3 +1,5 @@
+let canClick = true;
+let cardCompar = [];
 let cardsGame = parseInt(prompt("Quantas cartas você deseja? (números pares de 4 a 14"));
 const cards = [
     './images/akechi.gif',
@@ -27,14 +29,13 @@ function gameStart() {
       cardsInGame.push(cards[i]);
       cardsInGame.push(cards[i]);
     }
-  
     cardsInGame.sort(random);
-  
+
     const include = document.querySelector(".all-cards");
     for (let x = 0; x < cardsInGame.length; x++) {
       include.innerHTML =
         include.innerHTML +
-        ` <article class="card front-face" onclick="cardClicked()" data-identifier="card">
+        ` <article class="card front-face" onclick="cardClicked(this)" data-identifier="card">
           <img src="./images/plogo.png" class="img-card face front-face" data-identifier="front-face" />
          <img src="${cardsInGame[x]}" class="img-card back-face face" data-identifier="back-face"/ >
      </article>`;
@@ -42,15 +43,12 @@ function gameStart() {
   }
   gameStart();
 
-  function cardClicked(){
-    const cardClick = document.querySelector(".card");
-    if (cardClick.classList.contains("front-face")) {
-    }}
+  //flip da carta
+  function cardClicked(cardFlip){
+   cardFlip.querySelector('.back-face').style.transform = 'rotateY(0deg)'
+   cardFlip.querySelector('.front-face').style.transform = 'rotateY(-180deg)'
+  }
 
-    
-  
 
- 
-  
 
   
